@@ -1,22 +1,31 @@
 # TLV700 Datasheet Assistant
 
-A local RAG application for asking questions about the Texas Instruments TLV700 datasheet. It retrieves relevant text and tables, generates an answer using Ollama, and displays supporting passages with PDF page references.
+A datasheet question-answering project for the Texas Instruments TLV700 regulator. It retrieves relevant text and tables using BM25 and generates local answers using Ollama, with supporting passages and PDF page references.
+
+## Two Interfaces
+
+| Interface | Purpose |
+|---|---|
+| Public Streamlit demo | Search and inspect datasheet passages |
+| Local Ollama app | Generate answers with citations and supporting evidence |
+
+The public demo does not generate AI answers. Full answer generation runs locally using `qwen3:8b`.
 
 ## Features
 
 - PDF extraction using Docling.
 - Manually reviewed Markdown with source-page markers.
-- Specification chunks preserving table headers, conditions, and footnotes.
+- Specification chunks preserving values, conditions, and footnotes.
 - BM25 keyword retrieval.
-- Local answer generation with `qwen3:8b`.
-- Streamlit interface with supporting evidence and JSON downloads.
-- Retrieval evaluation using labelled questions and expected chunk IDs.
+- Local answer generation using Ollama.
+- Expandable supporting evidence and JSON result downloads.
+- Retrieval evaluation using questions with labelled evidence.
 
-## How It Works
+## Pipeline
 
-PDF → Docling extraction → Manual review → Chunking → BM25 retrieval → Ollama → Answer and citations
+PDF → Extraction → Manual review → Chunking → BM25 retrieval → Ollama → Answer with citations
 
-Only retrieved chunks that fit the configured context budget are sent to the model. The interface identifies omitted passages.
+The public demo stops at retrieval. The local app sends complete retrieved chunks to Ollama within the configured context budget.
 
 ## Tech Stack
 
@@ -27,42 +36,64 @@ Python · Docling · BM25 · Ollama · Qwen3 · Streamlit
 ```text
 datasheet_assistant/
 ├── app/
-│   └── streamlit_app.py
+│   ├── streamlit_app.py       # Public search-only interface
+│   ├── streamlit_local.py     # Local Ollama answer interface
+│   └── requirements.txt
 ├── src/
 │   ├── chunk.py
 │   ├── search.py
 │   ├── evaluate.py
 │   └── answer.py
 ├── data/
-│   ├── raw/
-│   ├── extracted/
-│   ├── validated/
 │   ├── chunks/
-│   ├── evaluation/
-│   └── answers/
-└── .streamlit/
-    └── config.toml
+│   │   └── TLV700.jsonl
+│   └── evaluation/
+├── .streamlit/
+│   └── config.toml
+└── README.md
 ```
 
-## Run Locally
+## Setup
 
-Requires Python, Streamlit, Ollama, and the prepared chunk file at `data/chunks/TLV700.jsonl`.
+Requires Python and the prepared chunk file included in the repository.
 
-From the project folder in PowerShell:
+Run in PowerShell:
 
 ```powershell
+git clone https://github.com/AditiS721/datasheet_assistant.git
+cd datasheet_assistant
+
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install streamlit
 
-ollama pull qwen3:8b
-
-python -m streamlit run app/streamlit_app.py --server.address 127.0.0.1
+python -m pip install -r app/requirements.txt
 ```
 
-Keep Ollama running. The interface defaults to an 8192-token context setting; memory requirements depend on the model and configuration.
+### Run the Search Interface
 
-Docling and its dependencies are required separately to reprocess source PDFs.
+```powershell
+python -m streamlit run app/streamlit_app.py
+```
+
+This interface does not require Ollama.
+
+### Run the Local Answer Interface
+
+Install and open [Ollama](https://ollama.com), then download the model:
+
+```powershell
+ollama pull qwen3:8b
+```
+
+Start the app:
+
+```powershell
+python -m streamlit run app/streamlit_local.py --server.address 127.0.0.1
+```
+
+The local interface defaults to `qwen3:8b`, five retrieved passages, and an 8192-token context setting. Memory requirements depend on the model and context configuration.
+
+Docling and its dependencies are needed separately to reprocess source PDFs.
 
 ## Example Questions
 
@@ -71,7 +102,9 @@ Docling and its dependencies are required separately to reprocess source PDFs.
 - What ground pin current is specified at no load?
 - Does a capacitor rated at 0.1 µF necessarily ensure stability?
 
-## Retrieval Evaluation
+## Evaluation
+
+Run retrieval evaluation:
 
 ```powershell
 python src/evaluate.py --chunks data/chunks/TLV700.jsonl --questions data/evaluation/questions.json --output data/evaluation/results.json
@@ -79,24 +112,27 @@ python src/evaluate.py --chunks data/chunks/TLV700.jsonl --questions data/evalua
 
 Recorded retrieval results after improvements:
 
-| Question set | Questions scored | Hit@5 |
+| Development question set | Questions scored | Hit@5 |
 |---|---:|---:|
 | Original | 9 | 9/9 |
 | Additional | 10 | 10/10 |
 
-Hit@5 checks whether at least one expected evidence chunk appears in the first five results. These small development sets were used during iteration; the results do not measure answer accuracy or generalisation. The unanswerable question in the original set is excluded from this retrieval metric.
+Hit@5 measures whether at least one expected evidence chunk appears in the top five results. The original set also contains one unanswerable question, excluded from this metric.
+
+These small sets were used during development. The scores measure retrieval, not generated-answer accuracy or performance on unseen questions.
 
 ## Limitations
 
 - Currently covers one TLV700 datasheet.
-- Figures and unreviewed appendix content are excluded from search.
-- The model can confuse typical and maximum values, omit conditions, or select the wrong table row.
-- Citation validation checks source IDs, not whether every claim is supported.
-- Some retrieved passages may be excluded by the context budget.
-- Current prices and other information outside the indexed datasheet are unavailable.
+- Figures and unreviewed appendix content are excluded.
+- The model can confuse table columns, omit conditions, or select the wrong test-condition row.
+- Citation checks validate source IDs, not factual support.
+- Retrieved passages may be omitted when they exceed the context budget.
+- Keyword matches do not guarantee that a question is answerable.
+- The public demo cannot access Ollama running on a user's laptop.
 
-Verify technical values and conditions against the original PDF before using an answer in a design.
+Verify values and conditions against the original PDF before using an answer in a design.
 
-## Datasheet
+## Source
 
-Texas Instruments TLV700, document SLVSA00E, revision E, April 2015.
+Texas Instruments TLV700 datasheet, document SLVSA00E, revision E, April 2015.
