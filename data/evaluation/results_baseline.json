@@ -1,0 +1,437 @@
+{
+  "evaluated": 9,
+  "hit_at_5": 1.0,
+  "results": [
+    {
+      "id": "q01",
+      "question": "What is the maximum dropout voltage at 200 mA?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-58d0c9fa7d28",
+          "pages": [
+            1
+          ],
+          "score": 8.230418801941816
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-a93f250173c3",
+          "pages": [
+            6
+          ],
+          "score": 7.693599669954832
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-43984708314d",
+          "pages": [
+            1
+          ],
+          "score": 6.322627645728087
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-40c52fcbe347",
+          "pages": [
+            5
+          ],
+          "score": 5.320091447971796
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-47c7d6f5c4f4",
+          "pages": [
+            5
+          ],
+          "score": 5.251403318937883
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "What input voltage range is recommended for the TLV700?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-ecd94c9d95b1",
+          "pages": [
+            5
+          ],
+          "score": 6.282432761536327
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-40c52fcbe347",
+          "pages": [
+            5
+          ],
+          "score": 5.334339785576118
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-8cdae51799c0",
+          "pages": [
+            12
+          ],
+          "score": 4.373835438395696
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-47c7d6f5c4f4",
+          "pages": [
+            5
+          ],
+          "score": 4.291167006896634
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-70d540846840",
+          "pages": [
+            14
+          ],
+          "score": 3.896279998951438
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "What output current range is listed under recommended operating conditions?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-303188a572f7",
+          "pages": [
+            5
+          ],
+          "score": 13.605463191621553
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-47c7d6f5c4f4",
+          "pages": [
+            5
+          ],
+          "score": 12.867263869928305
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-ecd94c9d95b1",
+          "pages": [
+            5
+          ],
+          "score": 11.148806560501479
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-40c52fcbe347",
+          "pages": [
+            5
+          ],
+          "score": 9.62153554704765
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-8cdae51799c0",
+          "pages": [
+            12
+          ],
+          "score": 7.720702797596433
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "Does an absolute maximum rating mean that normal operation is guaranteed at that value?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-303188a572f7",
+          "pages": [
+            5
+          ],
+          "score": 13.57940420433765
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-47c7d6f5c4f4",
+          "pages": [
+            5
+          ],
+          "score": 11.58289620634467
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-d4152bf5a22e",
+          "pages": [
+            12
+          ],
+          "score": 6.648168146685532
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-1b8b6212077b",
+          "pages": [
+            12
+          ],
+          "score": 6.438587772489413
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-8cdae51799c0",
+          "pages": [
+            12
+          ],
+          "score": 5.309227736456435
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Which pin is EN in the SOT DDC package, and what does it do?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-478f5205bc25",
+          "pages": [
+            4
+          ],
+          "score": 8.6614457617179
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-52031d78e43f",
+          "pages": [
+            11
+          ],
+          "score": 8.397423105730553
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-fc9e828008f8",
+          "pages": [
+            5
+          ],
+          "score": 6.010503430442217
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-dd14a2842fce",
+          "pages": [
+            1
+          ],
+          "score": 5.123015076958509
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-70d540846840",
+          "pages": [
+            14
+          ],
+          "score": 3.661714785148698
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "What input voltage levels are specified for the EN pin to enable and disable the regulator?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-478f5205bc25",
+          "pages": [
+            4
+          ],
+          "score": 13.246941539654598
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-52031d78e43f",
+          "pages": [
+            11
+          ],
+          "score": 12.687637957108548
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-70d540846840",
+          "pages": [
+            14
+          ],
+          "score": 7.539828344038613
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-a93f250173c3",
+          "pages": [
+            6
+          ],
+          "score": 6.949748720837761
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-1b8b6212077b",
+          "pages": [
+            12
+          ],
+          "score": 5.697930286688374
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "What ground pin current is specified at no load?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-478f5205bc25",
+          "pages": [
+            4
+          ],
+          "score": 10.29757927172869
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-c6d750af2b20",
+          "pages": [
+            15
+          ],
+          "score": 7.094961371900828
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-a93f250173c3",
+          "pages": [
+            6
+          ],
+          "score": 7.004624007472495
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-65fe27cfe4b2",
+          "pages": [
+            1
+          ],
+          "score": 6.402177021266123
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-70d540846840",
+          "pages": [
+            14
+          ],
+          "score": 5.500905214813498
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "What PSRR is specified at 1 kHz, and under what test conditions?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-303188a572f7",
+          "pages": [
+            5
+          ],
+          "score": 5.852780191671172
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-43984708314d",
+          "pages": [
+            1
+          ],
+          "score": 5.497248176888302
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-8cdae51799c0",
+          "pages": [
+            12
+          ],
+          "score": 5.060872749802025
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-a93f250173c3",
+          "pages": [
+            6
+          ],
+          "score": 4.825803053457708
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-47c7d6f5c4f4",
+          "pages": [
+            5
+          ],
+          "score": 4.798908654929233
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What effective output capacitance is required, and does a capacitor rated at 0.1 µF necessarily ensure stability?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-e8d1442097e7",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 26.77844907162605
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-43984708314d",
+          "pages": [
+            1
+          ],
+          "score": 11.518531232256226
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-478f5205bc25",
+          "pages": [
+            4
+          ],
+          "score": 9.560627487603679
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-65fe27cfe4b2",
+          "pages": [
+            1
+          ],
+          "score": 9.362831998502497
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-5aba0467d64c",
+          "pages": [
+            14
+          ],
+          "score": 4.177215539803803
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What is the price of ten TLV700 devices today?",
+      "hit_at_5": null,
+      "note": "Not scored without gold IDs or for unanswerable questions",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-65fe27cfe4b2",
+          "pages": [
+            1
+          ],
+          "score": 2.49361604219751
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-58d0c9fa7d28",
+          "pages": [
+            1
+          ],
+          "score": 2.314561010544958
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-129d116d38b8",
+          "pages": [
+            13
+          ],
+          "score": 2.3071212792013065
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-a412de77147b",
+          "pages": [
+            11
+          ],
+          "score": 2.271317005986894
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-794681cbfe1c",
+          "pages": [
+            1
+          ],
+          "score": 2.2170317139901243
+        }
+      ]
+    }
+  ]
+}

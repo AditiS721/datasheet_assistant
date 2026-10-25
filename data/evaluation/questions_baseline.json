@@ -1,0 +1,100 @@
+[
+  {
+    "id": "q01",
+    "question": "What is the maximum dropout voltage at 200 mA?",
+    "answerable": true,
+    "expected_answer": "250 mV maximum and 175 mV typical, with IOUT = 200 mA, VOUT = 2.35 V, and VIN = 0.98 × VOUT(nom).",
+    "source_page": 6,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-a93f250173c3"
+    ]
+  },
+  {
+    "id": "q02",
+    "question": "What input voltage range is recommended for the TLV700?",
+    "answerable": true,
+    "expected_answer": "2 V to 5.5 V under recommended operating conditions. Regulation also requires sufficient input-to-output voltage headroom.",
+    "source_page": 5,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-40c52fcbe347"
+    ]
+  },
+  {
+    "id": "q03",
+    "question": "What output current range is listed under recommended operating conditions?",
+    "answerable": true,
+    "expected_answer": "0 mA to 200 mA.",
+    "source_page": 5,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-40c52fcbe347"
+    ]
+  },
+  {
+    "id": "q04",
+    "question": "Does an absolute maximum rating mean that normal operation is guaranteed at that value?",
+    "answerable": true,
+    "expected_answer": "No. Absolute maximum ratings are stress ratings and do not imply functional operation. Exceeding them may cause permanent damage, and extended exposure may affect reliability.",
+    "source_page": 5,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-303188a572f7"
+    ]
+  },
+  {
+    "id": "q05",
+    "question": "Which pin is EN in the SOT DDC package, and what does it do?",
+    "answerable": true,
+    "expected_answer": "EN is pin 3 in the SOT DDC package. It enables the regulator when driven high and puts it into shutdown when driven low.",
+    "source_page": 4,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-478f5205bc25"
+    ]
+  },
+  {
+    "id": "q06",
+    "question": "What input voltage levels are specified for the EN pin to enable and disable the regulator?",
+    "answerable": true,
+    "expected_answer": "The electrical-characteristics table specifies EN high from 0.9 V to VIN and EN low from 0 V to 0.4 V. Behavior between these ranges is not guaranteed by the specified thresholds.",
+    "source_page": 6,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-a93f250173c3"
+    ]
+  },
+  {
+    "id": "q07",
+    "question": "What ground pin current is specified at no load?",
+    "answerable": true,
+    "expected_answer": "31 µA typical and 55 µA maximum at IOUT = 0 mA, under the applicable default table conditions. Typical values are at TJ = 25°C.",
+    "source_page": 6,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-a93f250173c3"
+    ]
+  },
+  {
+    "id": "q08",
+    "question": "What PSRR is specified at 1 kHz, and under what test conditions?",
+    "answerable": true,
+    "expected_answer": "68 dB typical at 1 kHz, with VIN = 2.3 V, VOUT = 1.8 V, and IOUT = 10 mA, under the other applicable default table conditions.",
+    "source_page": 6,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-a93f250173c3"
+    ]
+  },
+  {
+    "id": "q09",
+    "question": "What effective output capacitance is required, and does a capacitor rated at 0.1 µF necessarily ensure stability?",
+    "answerable": true,
+    "expected_answer": "The effective output capacitance must not be less than 0.1 µF after accounting for operating bias voltage and temperature. A capacitor rated at 0.1 µF does not necessarily ensure stability. TI recommends 1-µF X5R or X7R ceramic capacitors. Maximum ESR should be less than 200 mΩ.",
+    "source_page": 13,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-e8d1442097e7"
+    ]
+  },
+  {
+    "id": "q10",
+    "question": "What is the price of ten TLV700 devices today?",
+    "answerable": false,
+    "expected_answer": "The supplied datasheet does not provide current purchasing prices.",
+    "source_page": null,
+    "expected_chunk_ids": []
+  }
+]

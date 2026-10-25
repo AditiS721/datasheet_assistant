@@ -1,0 +1,437 @@
+{
+  "evaluated": 10,
+  "hit_at_5": 1.0,
+  "results": [
+    {
+      "id": "new-q01",
+      "question": "What is the typical dropout voltage at 100 mA, and what output voltage applies to that measurement?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-4a59e2c4e5e7",
+          "pages": [
+            6
+          ],
+          "score": 8.934165515468557
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-d4152bf5a22e",
+          "pages": [
+            12
+          ],
+          "score": 8.79639137321299
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-72617dca6a0b",
+          "pages": [
+            6
+          ],
+          "score": 7.796546616553362
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-b09e3918d1d4",
+          "pages": [
+            13
+          ],
+          "score": 7.683862517205241
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-e88b91e7f5ae",
+          "pages": [
+            12
+          ],
+          "score": 7.599240991620299
+        }
+      ]
+    },
+    {
+      "id": "new-q02",
+      "question": "What ground pin current is specified at 200 mA output current, and under what input-voltage condition?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-478f5205bc25",
+          "pages": [
+            4
+          ],
+          "score": 12.217674779969297
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-8cdae51799c0",
+          "pages": [
+            12
+          ],
+          "score": 11.64621511817868
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-0355492b2916",
+          "pages": [
+            6
+          ],
+          "score": 11.443394924512038
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-d4152bf5a22e",
+          "pages": [
+            12
+          ],
+          "score": 10.395221242300122
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-c6d750af2b20",
+          "pages": [
+            15
+          ],
+          "score": 9.73932646085295
+        }
+      ]
+    },
+    {
+      "id": "new-q03",
+      "question": "What shutdown current is specified when VIN = 2 V and VEN ≤ 0.4 V?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-475e562108da",
+          "pages": [
+            6
+          ],
+          "score": 12.766845740272164
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-52031d78e43f",
+          "pages": [
+            11
+          ],
+          "score": 11.904194766549303
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-091b144da860",
+          "pages": [
+            6
+          ],
+          "score": 7.008907105118654
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-fd1e9184583b",
+          "pages": [
+            11
+          ],
+          "score": 6.953165319110944
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-8962968f9265",
+          "pages": [
+            6
+          ],
+          "score": 6.692564083649623
+        }
+      ]
+    },
+    {
+      "id": "new-q04",
+      "question": "What output-noise voltage is specified, and over what measurement bandwidth?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-65fe27cfe4b2",
+          "pages": [
+            1
+          ],
+          "score": 5.661725783517098
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-e8d1442097e7",
+          "pages": [
+            13,
+            14
+          ],
+          "score": 5.543281400696879
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-d4152bf5a22e",
+          "pages": [
+            12
+          ],
+          "score": 5.524359420895192
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-72617dca6a0b",
+          "pages": [
+            6
+          ],
+          "score": 5.352407725349318
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-129d116d38b8",
+          "pages": [
+            13
+          ],
+          "score": 4.808087394378804
+        }
+      ]
+    },
+    {
+      "id": "new-q05",
+      "question": "How is the TLV700’s start-up time defined, and what typical value is listed?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-77705687a194",
+          "pages": [
+            6
+          ],
+          "score": 6.397171404529685
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-4ac0061b7d5f",
+          "pages": [
+            6
+          ],
+          "score": 4.687435475143166
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-1dd9ddac4c71",
+          "pages": [
+            6
+          ],
+          "score": 4.659945831834267
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-4f70b807b058",
+          "pages": [
+            6
+          ],
+          "score": 4.659945831834267
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-19aacd118f2d",
+          "pages": [
+            6
+          ],
+          "score": 4.5532007531534555
+        }
+      ]
+    },
+    {
+      "id": "new-q06",
+      "question": "What is the typical undervoltage-lockout threshold when VIN is rising?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-4ac0061b7d5f",
+          "pages": [
+            6
+          ],
+          "score": 13.139491816150038
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-a2b5402a1258",
+          "pages": [
+            12
+          ],
+          "score": 7.982933431300132
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-a412de77147b",
+          "pages": [
+            11
+          ],
+          "score": 5.613872172581941
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-e88b91e7f5ae",
+          "pages": [
+            12
+          ],
+          "score": 4.3773021162493695
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-52031d78e43f",
+          "pages": [
+            11
+          ],
+          "score": 4.172037460213387
+        }
+      ]
+    },
+    {
+      "id": "new-q07",
+      "question": "At approximately what junction temperatures does thermal shutdown activate and reset?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-acaa642b66b0",
+          "pages": [
+            15
+          ],
+          "score": 12.376301991554826
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-8962968f9265",
+          "pages": [
+            6
+          ],
+          "score": 8.558548405425825
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-f717d9280aee",
+          "pages": [
+            5
+          ],
+          "score": 7.505488074100652
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-25c5abc6a320",
+          "pages": [
+            16
+          ],
+          "score": 4.8608322260198165
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-fd1e9184583b",
+          "pages": [
+            11
+          ],
+          "score": 4.829247554265237
+        }
+      ]
+    },
+    {
+      "id": "new-q08",
+      "question": "What does TI recommend doing with EN when shutdown control is unnecessary?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-52031d78e43f",
+          "pages": [
+            11
+          ],
+          "score": 9.020561236911565
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-364a25950877",
+          "pages": [
+            5
+          ],
+          "score": 4.990274931798196
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-1ff222127dc7",
+          "pages": [
+            13
+          ],
+          "score": 4.2417251407082315
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-fd1e9184583b",
+          "pages": [
+            11
+          ],
+          "score": 4.140794321869616
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-232e7885da6f",
+          "pages": [
+            17
+          ],
+          "score": 3.894539375906902
+        }
+      ]
+    },
+    {
+      "id": "new-q09",
+      "question": "What happens to output voltage and transient performance when the regulator enters dropout mode?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-d4152bf5a22e",
+          "pages": [
+            12
+          ],
+          "score": 15.070989935429298
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-e88b91e7f5ae",
+          "pages": [
+            12
+          ],
+          "score": 12.518452238950914
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-478f5205bc25",
+          "pages": [
+            4
+          ],
+          "score": 8.97360604878555
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-a412de77147b",
+          "pages": [
+            11
+          ],
+          "score": 7.49810915216129
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-5aba0467d64c",
+          "pages": [
+            14
+          ],
+          "score": 7.235167846520628
+        }
+      ]
+    },
+    {
+      "id": "new-q10",
+      "question": "What equation does the datasheet give for power dissipation?",
+      "hit_at_5": true,
+      "note": "",
+      "retrieved": [
+        {
+          "chunk_id": "TLV700-fdb008365c01-2178c6d91f34",
+          "pages": [
+            16
+          ],
+          "score": 11.594156047750372
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-acaa642b66b0",
+          "pages": [
+            15
+          ],
+          "score": 5.795516628153292
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-70d540846840",
+          "pages": [
+            14
+          ],
+          "score": 3.2757696791712343
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-c0bec2928113",
+          "pages": [
+            6
+          ],
+          "score": 2.5579752805214877
+        },
+        {
+          "chunk_id": "TLV700-fdb008365c01-65fe27cfe4b2",
+          "pages": [
+            1
+          ],
+          "score": 2.305393628664228
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "id": "new-q01",
+    "question": "What is the typical dropout voltage at 100 mA, and what output voltage applies to that measurement?",
+    "answerable": true,
+    "expected_answer": "85 mV typical at IOUT = 100 mA and VOUT = 2.8 V, with VIN = 0.98 × VOUT(nom). Typical values are at TJ = 25°C.",
+    "source_page": 6,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-4a59e2c4e5e7"
+    ]
+  },
+  {
+    "id": "new-q02",
+    "question": "What ground pin current is specified at 200 mA output current, and under what input-voltage condition?",
+    "answerable": true,
+    "expected_answer": "270 µA typical at IOUT = 200 mA and VIN = VOUT + 0.5 V, under the other applicable default table conditions.",
+    "source_page": 6,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-0355492b2916"
+    ]
+  },
+  {
+    "id": "new-q03",
+    "question": "What shutdown current is specified when VIN = 2 V and VEN ≤ 0.4 V?",
+    "answerable": true,
+    "expected_answer": "The row specifically for VIN = 2 V and VEN ≤ 0.4 V lists 400 nA typical shutdown ground pin current.",
+    "source_page": 6,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-475e562108da"
+    ]
+  },
+  {
+    "id": "new-q04",
+    "question": "What output-noise voltage is specified, and over what measurement bandwidth?",
+    "answerable": true,
+    "expected_answer": "48 µV RMS typical over 100 Hz to 100 kHz, with VIN = 2.3 V, VOUT = 1.8 V, and IOUT = 10 mA, under the other applicable default table conditions.",
+    "source_page": 6,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-72617dca6a0b"
+    ]
+  },
+  {
+    "id": "new-q05",
+    "question": "How is the TLV700’s start-up time defined, and what typical value is listed?",
+    "answerable": true,
+    "expected_answer": "Start-up time is the time from EN assertion until the output reaches 0.98 × VOUT(nom). The listed typical value is 100 µs with COUT = 1 µF and IOUT = 200 mA, under the other applicable default table conditions.",
+    "source_page": 6,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-77705687a194"
+    ]
+  },
+  {
+    "id": "new-q06",
+    "question": "What is the typical undervoltage-lockout threshold when VIN is rising?",
+    "answerable": true,
+    "expected_answer": "1.9 V typical when VIN is rising.",
+    "source_page": 6,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-4ac0061b7d5f"
+    ]
+  },
+  {
+    "id": "new-q07",
+    "question": "At approximately what junction temperatures does thermal shutdown activate and reset?",
+    "answerable": true,
+    "expected_answer": "Thermal shutdown disables the output at approximately 160°C junction temperature and re-enables it after cooling to approximately 140°C.",
+    "source_page": 15,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-acaa642b66b0",
+      "TLV700-fdb008365c01-8962968f9265"
+    ]
+  },
+  {
+    "id": "new-q08",
+    "question": "What does TI recommend doing with EN when shutdown control is unnecessary?",
+    "answerable": true,
+    "expected_answer": "EN can be connected to the IN pin when shutdown capability is not required.",
+    "source_page": 11,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-52031d78e43f"
+    ]
+  },
+  {
+    "id": "new-q09",
+    "question": "What happens to output voltage and transient performance when the regulator enters dropout mode?",
+    "answerable": true,
+    "expected_answer": "The output voltage becomes approximately the input voltage minus the dropout voltage. Transient performance is significantly degraded, and line or load transients may cause large output-voltage deviations.",
+    "source_page": 12,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-d4152bf5a22e"
+    ]
+  },
+  {
+    "id": "new-q10",
+    "question": "What equation does the datasheet give for power dissipation?",
+    "answerable": true,
+    "expected_answer": "PD = (VIN - VOUT) × IOUT.",
+    "source_page": 16,
+    "expected_chunk_ids": [
+      "TLV700-fdb008365c01-2178c6d91f34"
+    ]
+  }
+]
