@@ -122,3 +122,11 @@ Verify technical values and conditions against the original PDF before using the
 ## Source
 
 Texas Instruments TLV700 datasheet, SLVSA00E, revision E, April 2015.
+
+## Project Objective
+
+Build an evidence-based assistant for electronics datasheets that retrieves technical specifications and generates answers with source-page citations.
+
+## Learning Outcomes
+
+Practical experience in PDF extraction, data cleaning, context-preserving chunking, BM25 retrieval, local LLM integration, evaluation, and deployment, with an emphasis on distinguishing retrieval performance from answer accuracy.
